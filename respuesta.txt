@@ -1,0 +1,1 @@
+Primero evalua si los numeros son menores que 0, si lo son los mantiene en el ciclo, al salir del primer ciclo, evalua si este numero es diferente de 0, si lo es puede entrar al siguiente ciclo y evalua este numero si es un numero par, al final lo que conseguimos es la multiplicación de n y m como resultado.  
