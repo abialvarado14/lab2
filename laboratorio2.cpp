@@ -4,12 +4,15 @@
 using namespace std;
 
  int main(){
-	int opc, valor, asig, mayor=500,menor=1,numpensado;
+	int opc,op1, valor, asig, mayor=500,menor=1,numpensado;
 	bool respUser = true;
 	char respuesta;
-	
+	cout << "Ingrese el programa que desea:\n1.Juego\n2.Numero triangular";
+	cin >> op1;		
+	if (op1==1){
 	cout << "Si usted quiere que adivine su numero  presione 1, si quiere usted  adivinar presione 2 ";
-	cin >> opc;
+        cin >> opc;
+
 	switch (opc){
 		case 1:
 			cout << "HOLA Piensa en un numero... No mayor de 500! ";		
@@ -46,7 +49,17 @@ using namespace std;
 				cin >> numpensado;
 			}
 			cout << "Felicidades! ADIVINASTE EL NUMERO!";
-
+		break;
 			 	
 	}//fin case tipo del juego
- }	
+	}else{
+		int n;
+		double resultado;
+		cout << "Ingrese la posicion: " ;
+		cin >> n;
+		resultado = (n*(n+1))/2;
+		cout << "El numero en la posicion " << n << "Es " << resultado;
+		
+		}
+ 
+}	
